@@ -8,6 +8,11 @@ export default function Home() {
   function goLogin(){
     navigate("/login");
   }
+
+  function goShare(){
+    navigate("/api/fileshare");
+  }
+
   function goSignup(){
     navigate("/signup");
   }
@@ -46,6 +51,7 @@ export default function Home() {
       <button onClick={goLogin} >Login</button>
       <button onClick={goSignup} >Signup</button>
       <button onClick={goLogout}  >Logout</button>
+      <button onClick={goShare}  >goShare</button>
     </>
   )
 }

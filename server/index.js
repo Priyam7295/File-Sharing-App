@@ -2,8 +2,10 @@ const express = require('express');
 const app=express();
 const cors = require('cors'); 
 const authcontrollerModule = require('./controller/authcontroller.js');
+const servicecontrollerModule = require('./controller/servicecontroller.js');
 const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
+const upload =require("./utils/upload.js");
 dotenv.config();
 const bodyParser = require('body-parser'); 
 // Mongo db
@@ -41,5 +43,6 @@ app.post("/signup",authcontrollerModule.signup_post); //creat account
 app.get("/logout",authcontrollerModule.logout_get); //logout
 
 app.get('/share', authcontrollerModule.try);
-
+app.post('/upload',upload.single("file") ,servicecontrollerModule.upload_file);
+app.get("/file/:fileId" ,servicecontrollerModule.getImage);
 

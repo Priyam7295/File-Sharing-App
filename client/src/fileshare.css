@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fileshare .main-wrapper {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fileshare .container {
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .fileshare .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fileshare h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #445A6F;
+    margin: 40px 0;
+  }
+  
+  .fileshare p {
+    font-size: 16px;
+    color: #445A6F;
+    margin-bottom: 20px;
+  }
+  
+  .fileshare input {
+    margin: 20px 0;
+    width: 300px;
+    padding: 8px;
+  }
+  
+  .fileshare input:focus-visible {
+    outline: none;
+  }
+  
+  .fileshare button {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #445A6F;
+    border: 1px solid #445A6F;
+    color: #fff;
+    font-size: 20px;
+    margin: 30px 0;
+    cursor: pointer;
+  }
+  
+  .fileshare .inputh {
+    display: none;
+  }
+  
+  .fileshare .link-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .fileshare .download-link {
+    padding: 10px 20px;
+    background-color: #FF6F61; /* Different background color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .fileshare .download-link:hover {
+    background-color: #E55D50; /* Different hover background color */
+    color: #fff; /* Text color on hover */
+  }
+  
+  .fileshare .copy-button {
+    padding: 10px 20px;
+    background-color: #FF6F61; /* Different background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .fileshare .copy-button:hover {
+    background-color: #E55D50; /* Different hover background color */
+    color: #fff; /* Text color on hover */
+  }
+
+  a{
+    color:black;
+    text-decoration: none;
+    font-family: cursive;
+    transition: background-color 0.3s;
+    padding:2px;
+  }
+  a:hover{
+    background-color: rgb(226, 224, 224);
+  }
